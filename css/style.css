@@ -1,0 +1,250 @@
+/* 全局重置 - 复刻参考站 极致极简 无冗余样式 */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Arial, sans-serif;
+}
+body {
+    color: #2d2d2d;
+    background-color: #ffffff;
+    line-height: 1.7;
+    letter-spacing: 0.3px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+ul {
+    list-style: none;
+}
+img {
+    width: 100%;
+    display: block;
+    border-radius: 4px; /* 参考站同款小圆角 更高级 */
+    object-fit: cover;
+}
+/* 容器统一宽度+居中+超大留白 复刻参考站核心排版 */
+.destinations, .black-myth, .routes-section, .food {
+    max-width: 1280px;
+    margin: 80px auto;
+    padding: 0 25px;
+}
+h2 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 26px;
+    color: #2d2d2d;
+    font-weight: 500; /* 参考站同款轻量标题 不厚重 */
+    letter-spacing: 1px;
+}
+
+/* 多国语言切换 - 参考站同款极简悬浮 位置微调更美观 */
+.lang-switch {
+    position: fixed;
+    top: 22px;
+    right: 25px;
+    z-index: 999;
+}
+.lang-switch button {
+    padding: 5px 9px;
+    margin-left: 6px;
+	border: none;
+    background-color: #f1f1f1;
+    color: #2d2d2d;
+    border-radius: 3px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: all 0.2s ease;
+}
+.lang-switch button:hover {
+    background-color: #4a90e2;
+    color: white;
+}
+
+/* 导航栏 - 复刻参考站 浅灰底色+无下划线 高级感拉满 */
+.nav-bar {
+    background-color: #f8f8f8;
+    color: #2d2d2d;
+    padding: 20px 0;
+    margin-top: 60px;
+}
+.nav-bar ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px; /* 参考站同款间距 不拥挤 */
+}
+.nav-bar a {
+    font-size: 15px;
+    font-weight: 400;
+    transition: color 0.2s ease;
+}
+.nav-bar a:hover {
+    color: #4a90e2; /* 参考站同款浅蓝高亮 不刺眼 */
+}
+
+/* Banner大图 - 复刻参考站 全屏无框+低透明度遮罩 更柔和 */
+.banner {
+    height: 520px;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(https://img-blog.csdnimg.cn/20250101000000123.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+.banner {
+    height: 520px;
+    background: linear-gradient(rgba(0,0,0,0.45), rgba(0,0,0,0.45)), url(images/china-banner.jpg);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    padding: 0 20px;
+}
+
+/* 卡片通用样式 - 1:1复刻参考站 无边框+无阴影+仅hover上浮 核心风格 */
+.card-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(290px, 1fr));
+    gap: 30px; /* 参考站同款大间距 留白充足 */
+}
+.card {
+    background: #ffffff;
+    border-radius: 4px;
+    overflow: hidden;
+    transition: transform 0.3s ease; /* 仅上浮 无阴影 参考站核心 */
+}
+.card:hover {
+    transform: translateY(-6px); /* 轻微上浮 高级不浮夸 */
+}
+.card img {
+    height: 210px;
+}
+.card h3 {
+    padding: 20px 20px 8px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.card p {
+    padding: 0 20px 22px;
+    font-size: 14px;
+    color: #666666;
+    line-height: 1.7;
+}
+
+/* 按钮样式 - 复刻参考站 浅蓝+圆角小+hover深色 无多余装饰 */
+.btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 11px 22px;
+    background-color: #4a90e2;
+    color: white;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 400;
+    transition: background-color 0.2s ease;
+    border: none;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #3a7bc8;
+}
+
+/* 黑神话专题 - 优化排版 参考站同款纯白区块 无阴影 */
+.black-myth {
+    background: #ffffff;
+    padding: 50px 40px;
+    border-radius: 4px;
+}
+.myth-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    align-items: center;
+}
+.myth-content img {
+    height: 420px;
+}
+.myth-content p {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #444444;
+}
+
+/* 旅游线路板块 - 和目的地卡片统一风格 无缝衔接 */
+.routes-section {
+    background-color: #f9f9f9;
+    padding: 60px 25px;
+    margin: 80px 0;
+}
+.routes-section .card-list {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+/* 美食板块 - 复刻参考站 极简横向排列 无多余样式 */
+.food-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 25px;
+}
+.food-item {
+    text-align: center;
+}
+.food-item img {
+    height: 180px;
+    margin-bottom: 12px;
+}
+.food-item h4 {
+    font-size: 15px;
+    color: #2d2d2d;
+    font-weight: 400;
+}
+
+/* 页脚 - 复刻参考站 浅灰底色+轻量文字 无冗余 */
+.footer {
+    background-color: #f8f8f8;
+    color: #666666;
+    text-align: center;
+    padding: 25px 0;
+    margin-top: 80px;
+    font-size: 13px;
+}
+
+/* 响应式适配 - 手机端排版不变 复刻参考站适配逻辑 */
+@media (max-width: 768px) {
+    .myth-content {
+        grid-template-columns: 1fr;
+    }
+    .banner h1 {
+        font-size: 32px;
+    }
+    .nav-bar ul {
+        gap: 20px;
+    }
+    .destinations, .black-myth, .routes-section, .food {
+        margin: 50px auto;
+    }
+}
+
+/* 手机/平板/电脑 全站自适应适配代码 */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+html { width: 100%; overflow-x: hidden; }
+body { width: 100%; max-width: 1920px; margin: 0 auto; padding: 0 10px; }
+img { max-width: 100%; height: auto; }
+.nav-bar ul { display: flex; flex-wrap: wrap; justify-content: center; gap: 10px; padding: 10px 0; }
+.nav-bar li { list-style: none; margin: 5px 0; }
+.city-content { padding: 0 10px; }
+.card-list { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 20px; padding: 10px 0; }
+.card { padding: 20px; border-radius: 8px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+.btn { display: inline-block; padding: 10px 20px; background: #e63946; color: white; text-decoration: none; border-radius: 4px; margin: 5px; }

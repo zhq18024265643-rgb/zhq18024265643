@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore China - Travel Guide for Foreign Visitors</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="lang-switch">
+        <button onclick="setLang('en')">EN</button>
+        <button onclick="setLang('zh')">中</button>
+        <button onclick="setLang('ja')">日</button>
+        <button onclick="setLang('ko')">韩</button>
+    </div>
+
+    <nav class="nav-bar">
+        <ul>
+            <li><a href="index.html" class="lang" data-key="home">Home</a></li>
+            <li><a href="#" class="lang" data-key="beijing">Beijing</a></li>
+            <li><a href="#" class="lang" data-key="shanghai">Shanghai</a></li>
+            <li><a href="#" class="lang" data-key="xian">Xi'an</a></li>
+            <li><a href="cities/shanxi.html" class="lang" data-key="shanxi">Shanxi · Black Myth</a></li>
+            <li><a href="#" class="lang" data-key="sichuan">Sichuan</a></li>
+            <li><a href="#" class="lang" data-key="yunnan">Yunnan</a></li>
+            <li><a href="#" class="lang" data-key="hangzhou">Hangzhou</a></li>
+            <li><a href="#" class="lang" data-key="guilin">Guilin</a></li>
+            <li><a href="#" class="lang" data-key="tibet">Tibet</a></li>
+            <li><a href="routes/sichuan.html" class="lang" data-key="routes">Travel Routes</a></li>
+            <li><a href="contact.html" class="lang" data-key="contact">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <div class="banner" style="background: url(images/china-banner.jpg) no-repeat center center; background-size: cover; width: 100%; height: 500px; display: flex; flex-direction: column; justify-content: center; align-items: center; color: white; text-shadow: 0 0 10px #000;">
+    <h1 class="lang" data-key="banner_title">Discover the Mysterious Beauty of China</h1>
+    <p class="lang" data-key="banner_desc">Ancient Heritage · Natural Wonders · Authentic Experiences</p>
+</div>
+    <section class="destinations">
+        <h2 class="lang" data-key="dest_title">Popular Destinations</h2>
+        <div class="card-list">
+            <div class="card">
+                <img src="images/beijing.jpg" alt="Beijing Great Wall">
+                <h3 class="lang" data-key="beijing">Beijing</h3>
+                <p class="lang" data-key="beijing_desc">Great Wall & Forbidden City, the heart of ancient China.</p>
+            </div>
+            <div class="card">
+                <img src="images/xian.jpg" alt="Xi'an Terracotta Army">
+                <h3 class="lang" data-key="xian">Xi'an</h3>
+                <p class="lang" data-key="xian_desc">Terracotta Army & Tang Dynasty culture, the glory of old China.</p>
+            </div>
+            <div class="card">
+                <img src="images/shanxi.jpg" alt="Shanxi Black Myth">
+                <h3 class="lang" data-key="shanxi">Shanxi</h3>
+                <p class="lang" data-key="shanxi_desc">Black Myth: Wukong real prototype & ancient grottoes.</p>
+            </div>
+            <div class="card">
+                <img src="images/sichuan.jpg" alt="Sichuan Panda">
+                <h3 class="lang" data-key="sichuan">Sichuan</h3>
+                <p class="lang" data-key="sichuan_desc">Giant Pandas, Jiuzhaigou & spicy Sichuan cuisine.</p>
+            </div>
+            <div class="card">
+                <img src="images/guilin.jpg" alt="Guilin Mountains">
+                <h3 class="lang" data-key="guilin">Guilin</h3>
+                <p class="lang" data-key="guilin_desc">Li River & karst mountains, the poetic landscape of China.</p>
+            </div>
+            <div class="card">
+                <img src="images/hangzhou.jpg" alt="Hangzhou West Lake">
+                <h3 class="lang" data-key="hangzhou">Hangzhou</h3>
+                <p class="lang" data-key="hangzhou_desc">West Lake & silk culture, the beauty of southern China.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="black-myth">
+        <h2 class="lang" data-key="myth_title">Black Myth: Wukong · Shanxi Real Prototype</h2>
+        <div class="myth-content">
+            <img src="images/shanxi-myth.jpg" alt="Shanxi Ancient Architecture">
+            <p class="lang" data-key="myth_desc">The hit game <b>Black Myth: Wukong</b> takes all core scenes from Shanxi's 1500-year-old architecture. Visit Yungang Grottoes, Hanging Temple, Yingxian Wooden Tower - the real places that inspired the game's stunning visuals.</p>
+            <a href="cities/shanxi.html" class="btn lang" data-key="myth_btn">Explore Shanxi Details</a>
+        </div>
+    </section>
+
+    <section class="routes-section">
+        <h2 class="lang" data-key="route_title">Premium Travel Routes</h2>
+        <div class="card-list">
+            <div class="card">
+                <img src="images/sichuan-route.jpg" alt="Sichuan 7D6N Tour">
+                <h3>Sichuan 7 Days 6 Nights Tour</h3>
+                <p>Chengdu Panda Base → Jiuzhaigou Valley → Leshan Giant Buddha → Mount Emei</p>
+                <a href="routes/sichuan.html" class="btn">View Itinerary</a>
+            </div>
+            <div class="card">
+                <img src="images/yunnan.jpg" alt="Yunnan 5D4N Tour">
+                <h3>Yunnan 5 Days 4 Nights Tour</h3>
+                <p>Kunming → Dali Ancient Town → Lijiang Old Town → Tiger Leaping Gorge</p>
+                <a href="#" class="btn">View Itinerary</a>
+            </div>
+            <div class="card">
+                <img src="images/shanxi-tower.jpg" alt="Shanxi Black Myth Tour">
+                <h3>Shanxi Black Myth 3 Days Tour</h3>
+                <p>Yungang Grottoes → Hanging Temple → Yingxian Wooden Tower → Shuanglin Temple</p>
+                <a href="#" class="btn">View Itinerary</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="food">
+        <h2 class="lang" data-key="food_title">Authentic Chinese Cuisine</h2>
+        <div class="food-list">
+            <div class="food-item">
+                <img src="images/food-duck.jpg" alt="Beijing Roast Duck">
+                <h4>Beijing Roast Duck</h4>
+            </div>
+            <div class="food-item">
+                <img src="images/food-hotpot.jpg" alt="Sichuan Hot Pot">
+                <h4>Sichuan Hot Pot</h4>
+            </div>
+            <div class="food-item">
+                <img src="images/food-dimsum.jpg" alt="Cantonese Dim Sum">
+                <h4>Cantonese Dim Sum</h4>
+            </div>
+            <div class="food-item">
+                <img src="images/food-noodle.jpg" alt="Lanzhou Noodles">
+                <h4>Lanzhou Beef Noodles</h4>
+            </div>
+            <div class="food-item">
+                <img src="images/food-rice-noodle.jpg" alt="Yunnan Rice Noodles">
+                <h4>Yunnan Cross Bridge Noodles</h4>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p class="lang" data-key="footer">Explore China © 2026 | All Rights Reserved</p>
+    </footer>
+
+    <script src="js/lang.js"></script>
+</body>
+</html>
